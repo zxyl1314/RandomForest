@@ -190,6 +190,17 @@ if __name__ == "__main__":
     #     sum += (predict[i] - y_test[i]) ** 2
     # var_rate = sum / len(predict)
     #print("the rate of var is", var_rate[0])
+    #-------------------------------------------------------
+#     skl_rf = sklearn.ensemble.RandomForestRegressor(n_estimators=10)
+#     y_train2 = np.ravel(y_train)
+#     skl_rf.fit(X_train, y_train2)
+#     predict_skl = skl_rf.predict(X_test)
+#     sum = 0
+#     for j in range(len(predict_skl)):
+#         sum += (predict_skl[j] - y_test[j]) ** 2
+#     var_rate = sum / len(predict_skl)
+#     print("sklearn MSE is :", var_rate[0])
+    #-------------------------------------------------------
     plt.plot(mse)
     plt.xlabel("the number of trees")
     plt.ylabel("MSE")
